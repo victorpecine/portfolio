@@ -1,3 +1,6 @@
-cd C:\Users\victo\Downloads\00. Estudo Data Science\portfolio && code .
+cd C:\Users\victo\Downloads\00. Estudo Data Science\portfolio && .\venv\Scripts\Activate
+
+code .
 
 streamlit run app.py
+streamlit run 🏠_Home.py

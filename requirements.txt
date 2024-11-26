@@ -1,3 +1,4 @@
 streamlit
 streamlit-option-menu
 streamlit_lottie
+streamlit-navigation-bar
