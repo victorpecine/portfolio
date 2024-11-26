@@ -1,0 +1,3 @@
+cd C:\Users\victo\Downloads\00. Estudo Data Science\portfolio && code .
+
+streamlit run app.py
