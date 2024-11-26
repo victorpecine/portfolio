@@ -4,6 +4,7 @@ from    streamlit_option_menu    import option_menu
 from    streamlit_lottie         import st_lottie
 from    datetime                 import datetime
 
+
 def calculate_age(birthdate):
     today = datetime.today()
     age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
@@ -46,7 +47,7 @@ if selected == 'About':
                                 )
     with col1:
         st.markdown("""
-                    Using data science, I have identified compressed air leaks of around 70%, \
+                    Using data science, I identified compressed air leaks of around 70%, \
                         significantly contributing to cost reduction. Additionally, I have analyzed \
                             data from oil quality, humidity, and vibration sensors in machines and engines.
 
@@ -70,8 +71,8 @@ if selected == 'About':
         img_computer_about = load_lottie_url(url_img_computer_about)
         st_lottie(img_computer_about,
                   speed=5,
-                  height=0,
-                  width=0,
+                  height=500,
+                  width=500,
                   loop=True,
                   quality='high'
                   )
@@ -153,6 +154,7 @@ if selected == 'Contact':
     st.markdown("""
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"> """,
             unsafe_allow_html=True)
+
     with st.container():
         col1, col2, col3 = st.columns(spec=[0.33, 0.33, 0.33],
                                       gap='small',
