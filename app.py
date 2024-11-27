@@ -75,12 +75,12 @@ if selected == 'About':
                                 in the client reducing their consumption of more expensive scrap, thereby \
                                     cutting costs both in material purchase and steel production.
 
-                        My daily work and study routine involve using ***Python*** and libraries such as \
-                            ***Pandas, Numpy, Scikit-learn, SciPy, Matplotlib, and Plotly***.
+                        My daily work and study routine involve using :green[***Python***] and libraries such as \
+                            :green[***Pandas, Numpy, Scikit-learn, SciPy, Matplotlib, and Plotly***].
 
                         I have developed models using supervised bagging techniques with Random Forest and \
-                            gradient boosting with ***Decision Trees, Random Forest, XGBoost, CatBoost, \
-                                LightGBM, and AdaBoost*** for both classification and regression problems.
+                            gradient boosting with :green[***Decision Trees, Random Forest, XGBoost, CatBoost, \
+                                LightGBM, and AdaBoost***] for both classification and regression problems.
 
                         Furthermore, the modeling process includes the use of hyperparameters, analysis of \
                             overfitting and underfitting, cross-validation, and metrics evaluation.
@@ -117,15 +117,15 @@ if selected == 'About':
                             amount of chemical elements in the scrap used to produce steel. Using the \
                                 model generated monthly savings of thousands of dollars.')
         st.markdown('- The routine involved statistical analysis, drawing up graphs to present to \
-                        costumers, searching and manipulating data in ***PostgreSQL***, meetings in English \
-                            with costumers, using ***Scipy, Scikit-learn, Numpy, Pandas, Matplotlib and \
-                                Plotly*** libraries.')
+                        costumers, searching and manipulating data in :green[***PostgreSQL***], meetings in English \
+                            with costumers, using :green[***Scipy, Scikit-learn, Numpy, Pandas, Matplotlib and \
+                                Plotly***] libraries.')
         st.markdown('######')
         st.markdown('#### Data Scientist at PredData')
         st.markdown('- From Oct. 2022 to Jan. 2024')
         st.markdown("- I was responsible for starting the company's data science department. \
-                        I developed unsupervised machine learning algorithms for ***clustering and \
-                            supervised algorithms for classification*** to identify compressed air leaks. \
+                        I developed unsupervised machine learning algorithms for :green[***clustering and \
+                            supervised algorithms for classification***] to identify compressed air leaks. \
                                 With this, we identified leaks of more than 60% for a multinational \
                                 vehicle manufacturer.")
         st.markdown('- I also created dashboards for costumers to view compressed air \
@@ -195,8 +195,8 @@ if selected == 'Projects':
                     Supervised machine learning techniques (Random Forest, XGBoost, Multi-layer \
                     Perceptron, AdaBoost) were applied.
                     
-                    The final model used was the ***Random Forest Classifier*** with hyper parameters, \
-                    ***saving $13,555, which represents a 36% reduction in costs***.
+                    The final model used was the :green[***Random Forest Classifier***] with hyper parameters, \
+                    :green[***saving $13,555, which represents a 36% reduction in costs***].
                     """
                     )
         with col2:
