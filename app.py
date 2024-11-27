@@ -98,17 +98,18 @@ if selected == 'About':
                             amount of chemical elements in the scrap used to produce steel. Using the \
                                 model generated monthly savings of thousands of dollars.')
         st.markdown('- The routine involved statistical analysis, drawing up graphs to present to \
-                        clients, searching and manipulating data in PostgreSQL, meetings in English \
-                            with clients, using Scipy, Scikit-learn, Numpy, Pandas, Matplotlib and \
+                        costumers, searching and manipulating data in PostgreSQL, meetings in English \
+                            with costumers, using Scipy, Scikit-learn, Numpy, Pandas, Matplotlib and \
                                 Plotly libraries.')
         st.markdown('######')
         st.markdown('#### Data Scientist at PredData')
         st.markdown('- From Oct. 2022 to Jan. 2024')
         st.markdown("- I was responsible for starting the company's data science department. \
                         I developed unsupervised machine learning algorithms for clustering and \
-                            supervised algorithms for classification to identify compressed air leaks.")
-        st.markdown('- With this, we identified leaks of more than 60% for a multinational vehicle \
-                        manufacturer. I also created dashboards for clients to view compressed air \
+                            supervised algorithms for classification to identify compressed air leaks. \
+                                With this, we identified leaks of more than 60% for a multinational \
+                                vehicle manufacturer.")
+        st.markdown('- I also created dashboards for costumers to view compressed air \
                             consumption and analyze estimated losses in real time.')
     st.markdown('---')
 
