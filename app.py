@@ -1,8 +1,9 @@
 import  requests
 import  streamlit as st
-from    streamlit_option_menu    import option_menu
-from    streamlit_lottie         import st_lottie
-from    datetime                 import datetime
+from    streamlit_option_menu import option_menu
+from    streamlit_lottie      import st_lottie
+from    streamlit_pdf_viewer  import pdf_viewer
+from    datetime              import datetime
 
 
 def calculate_age(birthdate):
@@ -25,8 +26,8 @@ st.set_page_config(page_title='Victor Pecine -  Data Scientist',
                    )
 
 selected = option_menu(menu_title=None,
-                        options=['About', 'Projects', 'Contact'],
-                        icons=['person', 'file-code', 'envelope'],
+                        options=['About', 'Projects', 'Contact', 'Letter of recommendation'],
+                        icons=['person', 'file-code', 'envelope', 'card-text'],
                         orientation='horizontal'
                         )
 
@@ -46,6 +47,15 @@ if selected == 'About':
     st.download_button(label='Download resume',
                        data=resume_content,
                        file_name='Victor_Pecine_Payan_resume.pdf',
+                       type='primary'
+                       )
+    # Download letter of recommendation button
+    resume_url = 'https://drive.google.com/uc?export=download&id=1Dmw2Z9SuCvFnnyyDwIIHa18Yvr51-86m'
+    response = requests.get(resume_url, timeout=20)
+    resume_content = response.content
+    st.download_button(label='Download letter of recommendation',
+                       data=resume_content,
+                       file_name='Victor_Pecine_Payan_letter_recommendation.pdf',
                        type='primary'
                        )
     st.write('---')
@@ -220,3 +230,18 @@ if selected == 'Contact':
             st.markdown('# [<i class="bi bi-github"></i>](https://github.com/victorpecine?tab=repositories)',
                         unsafe_allow_html=True
                         )
+
+# Letter of recommendation
+if selected == 'Letter of recommendation':
+    # Download letter of recommendation button
+    resume_url = 'https://drive.google.com/uc?export=download&id=1Dmw2Z9SuCvFnnyyDwIIHa18Yvr51-86m'
+    response = requests.get(resume_url, timeout=20)
+    resume_content = response.content
+    st.download_button(label='Download letter of recommendation',
+                       data=resume_content,
+                       file_name='Victor_Pecine_Payan_letter_recommendation.pdf',
+                       type='primary'
+                       )
+    letter_url = 'https://drive.google.com/file/d/1Dmw2Z9SuCvFnnyyDwIIHa18Yvr51-86m/preview'
+    st.components.v1.html(f'<iframe src="{letter_url}" width="700" height="900"></iframe>',
+                          height=900)
