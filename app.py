@@ -30,7 +30,7 @@ selected = option_menu(menu_title=None,
                         orientation='horizontal'
                         )
 
-# About infos
+# About
 if selected == 'About':
     my_birthdate = datetime(1991, 12, 31)
     my_age = calculate_age(my_birthdate)
@@ -76,6 +76,7 @@ if selected == 'About':
                   loop=True,
                   quality='high'
                   )
+
     # Education
     with st.container():
         st.markdown('---')
@@ -108,46 +109,53 @@ if selected == 'About':
             st.markdown('- Assertiveness')
             st.markdown('- Communication')
 
-# Projects infos
+# Projects
 if selected == 'Projects':
     st.markdown('# +2 years as Data Scientist')
-    st.markdown('### Here you can find many ways to use machine learning')
+    st.markdown('### Here you can find out how machine learning and I can help you')
     st.markdown('---')
     # APS failure truck
-    st.markdown('## 1)   36% savings on truck maintenance')
-    st.markdown('### [Github repo](https://github.com/victorpecine/aps_failure_truck_prediction)')
-    st.markdown("""
-                ### What
-                
-                The project aims to reduce maintenance costs for truck air pressure systems.
-                
-                Costs incurred include \$10 for inspections without defects, \$25 for preventive repairs, \
-                and \$500 for corrective maintenance when defects are not preemptively addressed.
-                
-                ### Why
-                
-                Despite maintaining a consistent fleet size, the company has observed increasing \
-                expenses on air system maintenance over the past three years. The project's primary goal \
-                is to estimate and reduce next year's maintenance costs.
-                
-                ### How
-                
-                The technical team provided historical data with classifications:
-                
-                - "pos" for trucks with air system defects
-                
-                - "neg" for defects in other systems.
-                
-                Supervised machine learning techniques (Random Forest, XGBoost, Multi-layer \
-                Perceptron, AdaBoost) were applied.
-                
-                The final model used was the **Random Forest Classifier** with hyper parameters, \
-                with a maintenance cost of $13,555, which represents a 36% reduction in costs
-                """
-                )
+    with st.container():
+        col1, col2 = st.columns(spec=2,
+                                gap='small',
+                                vertical_alignment='center'
+                                )
+    with col1:
+        st.markdown("""
+                    ### What
+                    
+                    The project aims to reduce maintenance costs for truck air pressure systems.
+                    
+                    Costs incurred include \$10 for inspections without defects, \$25 for preventive repairs, \
+                    and \$500 for corrective maintenance.
+                    
+                    ### Why
+                    
+                    Despite maintaining a consistent fleet size, the company has observed increasing \
+                    expenses on air system maintenance over the past three years. The project's primary goal \
+                    is to estimate and reduce next year's maintenance costs.
+                    
+                    ### How
+                    
+                    The technical team provided historical data with classifications:
+                    
+                    - "pos" for trucks with air system defects
+                    
+                    - "neg" for defects in other systems
+                    
+                    Supervised machine learning techniques (Random Forest, XGBoost, Multi-layer \
+                    Perceptron, AdaBoost) were applied.
+                    
+                    The final model used was the **Random Forest Classifier** with hyper parameters, \
+                    saving $13,555, which represents a 36% reduction in costs.
+                    """
+                    )
+        with col2:
+            st.image('https://i.ibb.co/WnH12w9/historical-cost.png')
+            st.image('https://i.ibb.co/PZXKbxt/pct-cost-variation.png')
     st.markdown('---')
 
-# Contact infos
+# Contact
 if selected == 'Contact':
     st.markdown("# Let's chat!")
     # To use bootstrap icons
