@@ -38,6 +38,16 @@ if selected == 'About':
     st.markdown(f"""### My name is Victor, I'm {my_age} and my goal as Data Scientist is to help companies \
                             become data-driven and use data to make strategic decisions, increase \
                                 profits and optimize processes.""")
+    st.markdown('######')
+    # Download resume button
+    resume_url = 'https://drive.google.com/uc?export=download&id=1DlOpk-SpFRC5hWI9mF-qao636usLncMT'
+    response = requests.get(resume_url, timeout=20)
+    resume_content = response.content
+    st.download_button(label='Download resume',
+                       data=resume_content,
+                       file_name='Victor_Pecine_Payan_resume.pdf',
+                       type='primary'
+                       )
     st.write('---')
     # About
     with st.container():
@@ -187,7 +197,7 @@ if selected == 'Projects':
 
 # Contact
 if selected == 'Contact':
-    st.markdown("# Let's chat!")
+    st.markdown("# Just click and let's chat!")
     # To use bootstrap icons
     st.markdown("""
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"> """,
