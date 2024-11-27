@@ -45,55 +45,81 @@ if selected == 'About':
                                 gap='small',
                                 vertical_alignment='top'
                                 )
-    with col1:
-        st.markdown("""
-                    Using data science, I identified compressed air leaks of around 70%, \
-                        significantly contributing to cost reduction. Additionally, I have analyzed \
-                            data from oil quality, humidity, and vibration sensors in machines and engines.
+        with col1:
+            st.markdown("""
+                        Using data science, I identified compressed air leaks of around 70%, \
+                            significantly contributing to cost reduction. Additionally, I have analyzed \
+                                data from oil quality, humidity, and vibration sensors in machines and engines.
 
-                    I was also part of a team that developed a machine learning model to identify \
-                        the chemical composition of scrap metal for steel production. This resulted \
-                            in the client reducing their consumption of more expensive scrap, thereby \
-                                cutting costs both in material purchase and steel production.
+                        I was also part of a team that developed a machine learning model to identify \
+                            the chemical composition of scrap metal for steel production. This resulted \
+                                in the client reducing their consumption of more expensive scrap, thereby \
+                                    cutting costs both in material purchase and steel production.
 
-                    My daily work and study routine involve using Python and libraries such as Pandas, \
-                        Numpy, Scikit-learn, SciPy, Matplotlib, and Plotly.
+                        My daily work and study routine involve using Python and libraries such as Pandas, \
+                            Numpy, Scikit-learn, SciPy, Matplotlib, and Plotly.
 
-                    I have developed models using supervised bagging techniques with Random Forest and \
-                        gradient boosting with XGBoost, CatBoost, LightGBM, and AdaBoost for both classification\
-                            and regression problems.
+                        I have developed models using supervised bagging techniques with Random Forest and \
+                            gradient boosting with XGBoost, CatBoost, LightGBM, and AdaBoost for both classification\
+                                and regression problems.
 
-                    Furthermore, the modeling process includes the use of hyperparameters, analysis of \
-                        overfitting and underfitting, cross-validation, and metrics evaluation.
-                    """)
-    with col2:
-        url_img_computer_about = 'https://lottie.host/29bc0eee-b34a-43ac-b6b1-1b862e565d30/To7aVTzMzF.json'
-        img_computer_about = load_lottie_url(url_img_computer_about)
-        st_lottie(img_computer_about,
-                  speed=5,
-                  height=500,
-                  width=500,
-                  loop=True,
-                  quality='high'
-                  )
+                        Furthermore, the modeling process includes the use of hyperparameters, analysis of \
+                            overfitting and underfitting, cross-validation, and metrics evaluation.
+                        """)
+        with col2:
+            url_img_computer_about = 'https://lottie.host/29bc0eee-b34a-43ac-b6b1-1b862e565d30/To7aVTzMzF.json'
+            img_computer_about = load_lottie_url(url_img_computer_about)
+            st_lottie(img_computer_about,
+                    speed=5,
+                    height=500,
+                    width=500,
+                    loop=True,
+                    quality='high'
+                    )
+    st.write('---')
 
     # Education
     with st.container():
-        st.markdown('---')
-        st.subheader('Education')
+        st.markdown('## Education')
         st.markdown('- MBA in Data Science and Analytics - USP (2024)')
         st.markdown('- Postgraduate in Renewable Energies and Energy Efficiency - UFPR (2020)')
         st.markdown('- Bachelor of Electrical Engineering - UTFPR (2017)')
+    st.markdown('---')
+
+    # Past experiences
+    with st.container():
+        st.markdown('## Past experiences')
+        st.markdown('### +2 years as Data Scientist')
+
+        st.markdown('#### Data Scientist at Ubiratã')
+        st.markdown('- From Jan. 2024 to Aug. 2024')
+        st.markdown('- I took part in a project where we developed a supervised machine learning \
+                        model with non-negative least squares regression to estimate the percentage \
+                            amount of chemical elements in the scrap used to produce steel. Using the \
+                                model generated monthly savings of thousands of dollars.')
+        st.markdown('- The routine involved statistical analysis, drawing up graphs to present to \
+                        clients, searching and manipulating data in PostgreSQL, meetings in English \
+                            with clients, using Scipy, Scikit-learn, Numpy, Pandas, Matplotlib and \
+                                Plotly libraries.')
+        st.markdown('######')
+        st.markdown('#### Data Scientist at PredData')
+        st.markdown('- From Oct. 2022 to Jan. 2024')
+        st.markdown("- I was responsible for starting the company's data science department. \
+                        I developed unsupervised machine learning algorithms for clustering and \
+                            supervised algorithms for classification to identify compressed air leaks.")
+        st.markdown('- With this, we identified leaks of more than 60% for a multinational vehicle \
+                        manufacturer. I also created dashboards for clients to view compressed air \
+                            consumption and analyze estimated losses in real time.')
+    st.markdown('---')
 
     # Skills
     with st.container():
-        st.markdown('---')
         col3, col4 = st.columns(spec=2,
                                 gap='small',
                                 vertical_alignment='top'
                                 )
         with col3:
-            st.subheader('Hard skills')
+            st.markdown('## Hard skills')
             st.markdown('- Python')
             st.markdown('- Machine learning')
             st.markdown('- Statistical analysis')
@@ -101,13 +127,14 @@ if selected == 'About':
             st.markdown('- Code versioning')
             st.markdown('- SQL')
         with col4:
-            st.subheader('Soft skills')
+            st.markdown('## Soft skills')
             st.markdown('- Analytical capability')
             st.markdown('- Planning')
             st.markdown('- Organization')
             st.markdown('- Adaptability')
             st.markdown('- Assertiveness')
             st.markdown('- Communication')
+    st.markdown('---')
 
 # Projects
 if selected == 'Projects':
