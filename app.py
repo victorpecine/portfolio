@@ -112,7 +112,9 @@ if selected == 'About':
 # Projects
 if selected == 'Projects':
     st.markdown('# +2 years as Data Scientist')
-    st.markdown('### Here you can find out how machine learning and I can help you')
+    st.markdown('### developing machine learning models for clustering, classification and \
+                        regression to contribute to the modernization of Brazilian industries \
+                            and help teams and leaders make decisions')
     st.markdown('---')
     # APS failure truck
     with st.container():
