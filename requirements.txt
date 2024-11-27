@@ -2,4 +2,3 @@ streamlit
 streamlit-option-menu
 streamlit_lottie
 streamlit-navigation-bar
-streamlit_pdf_viewer
