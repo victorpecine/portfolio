@@ -173,19 +173,17 @@ if selected == 'Projects':
                                 vertical_alignment='center'
                                 )
     with col1:
+        st.markdown("## Reducing maintenance cost for Scania's Air Pressure System")
+        st.markdown("#### [Github repo](https://github.com/victorpecine/aps_failure_truck_prediction)")
         st.markdown("""
                     ### What
-                    
-                    The project aims to reduce maintenance costs for truck air pressure systems.
-                    
-                    Costs incurred include \$10 for inspections without defects, \$25 for preventive repairs, \
-                    and \$500 for corrective maintenance.
-                    
-                    ### Why
                     
                     Despite maintaining a consistent fleet size, the company has observed increasing \
                     expenses on air system maintenance over the past three years. The project's primary goal \
                     is to estimate and reduce next year's maintenance costs.
+                    
+                    Costs incurred include \$10 for inspections without defects, \$25 for preventive repairs, \
+                    and \$500 for corrective maintenance.
                     
                     ### How
                     
@@ -197,6 +195,8 @@ if selected == 'Projects':
                     
                     Supervised machine learning techniques (Random Forest, XGBoost, Multi-layer \
                     Perceptron, AdaBoost) were applied.
+                    
+                    ### Result
                     
                     The final model used was the :green[***Random Forest Classifier***] with hyper parameters, \
                     :green[***saving $13,555, which represents a 36% reduction in costs***].
