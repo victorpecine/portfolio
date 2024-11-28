@@ -66,21 +66,23 @@ if selected == 'About':
                                 )
         with col1:
             st.markdown("""
-                        Using data science, I identified compressed air leaks of around 70%, \
-                            significantly contributing to cost reduction. Additionally, I have analyzed \
-                                data from oil quality, humidity, and vibration sensors in machines and engines.
-
-                        I was also part of a team that developed a machine learning model to identify \
-                            the chemical composition of scrap metal for steel production. This resulted \
-                                in the client reducing their consumption of more expensive scrap, thereby \
-                                    cutting costs both in material purchase and steel production.
+                        +2 years' experience as a Data Scientist developing :green[***clustering, \
+                            classification and regression***] machine learning models to contribute to \
+                                the modernization of Brazilian industries. I also carried out statistical \
+                                    studies and optimization on the models, proposing improvements to \
+                                        increase efficiency with programming in :green[***SQL***] and \
+                                            :green[***Python***].
+                                        
+                        In addition, I have interacted with clients to understand their needs and ensure \
+                            the delivery of value to help teams and leaders make decisions. To do this, \
+                                I seek a business vision to understand the need and align solutions with \
+                                    organizational strategies.
 
                         My daily work and study routine involve using :green[***Python***] and libraries such as \
                             :green[***Pandas, Numpy, Scikit-learn, SciPy, Matplotlib, and Plotly***].
 
-                        I have developed models using supervised bagging techniques with Random Forest and \
-                            gradient boosting with :green[***Decision Trees, Random Forest, XGBoost, CatBoost, \
-                                LightGBM, and AdaBoost***] for both classification and regression problems.
+                        I have developed models using models such as :green[***Decision Trees, Random Forest, \
+                            XGBoost, CatBoost, LightGBM, and AdaBoost***].
 
                         Furthermore, the modeling process includes the use of hyperparameters, analysis of \
                             overfitting and underfitting, cross-validation, and metrics evaluation.
