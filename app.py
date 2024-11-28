@@ -102,9 +102,9 @@ if selected == 'About':
     # Education
     with st.container():
         st.markdown('## Education')
-        st.markdown('- MBA in Data Science and Analytics - USP (2024)')
-        st.markdown('- Postgraduate in Renewable Energies and Energy Efficiency - UFPR (2020)')
-        st.markdown('- Bachelor of Electrical Engineering - UTFPR (2017)')
+        st.markdown('- MBA in Data Science and Analytics - USP (2022 - 2024)')
+        st.markdown('- Postgraduate in Renewable Energies and Energy Efficiency - UFPR (2018 - 2020)')
+        st.markdown('- Bachelor of Electrical Engineering - UTFPR (2009 - 2017)')
     st.markdown('---')
 
     # Past experiences
