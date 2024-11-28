@@ -78,7 +78,7 @@ if selected == 'About':
                                 I seek a business vision to understand the need and align solutions with \
                                     organizational strategies.
 
-                        My daily work and study routine involve using :green[***Python***] and libraries such as \
+                        My daily work and study routine involve using libraries such as \
                             :green[***Pandas, Numpy, Scikit-learn, SciPy, Matplotlib, and Plotly***].
 
                         I have developed models using models such as :green[***Decision Trees, Random Forest, \
@@ -116,9 +116,9 @@ if selected == 'About':
         st.markdown('- From Jan. 2024 to Aug. 2024')
         st.markdown('- I took part in a project where we developed a supervised machine learning model \
                         using non-negative least squares regression. The aim was to estimate the percentage \
-                            of chemical elements in the scrap used in steel production. With the \
+                            of chemical elements in the scrap used in steel production. :blue[With the \
                                 implementation of the model, the client obtained monthly savings \
-                                    of thousands of dollars.')
+                                    of thousands of dollars].')
         st.markdown('- My responsibilities included statistical analysis, drawing up graphs for \
                         presentations to clients, searching for and manipulating data in :green[PostgreSQL], \
                             using the :green[Scipy, Scikit-learn, Numpy, Pandas, Matplotlib and Plotly] \
@@ -129,8 +129,8 @@ if selected == 'About':
         st.markdown("- I was responsible for starting the company's data science department. I developed \
                         :green[unsupervised machine learning] algorithms for :green[clustering] and \
                             :green[supervised algorithms] for :green[classification] to identify compressed \
-                                air leaks. With this, we identified leaks of more than 60% for a \
-                                    multinational vehicle manufacturer.")
+                                air leaks. With this, :blue[we identified leaks over 60% for a \
+                                    multinational vehicle manufacturer].")
         st.markdown('- I also created dashboards for clients to view compressed air consumption and analyze \
                         estimated losses in real time.')
     st.markdown('---')
