@@ -207,6 +207,14 @@ if selected == 'Projects':
             st.image('https://i.ibb.co/PZXKbxt/pct-cost-variation.png')
     st.markdown('---')
 
+    # Classification to reduce default payments
+    with st.container():
+        st.markdown("## Classification to reduce default payments")
+        # Display the GIF
+        st.markdown("![Loading gif](https://media.tenor.com/wpSo-8CrXqUAAAAi/loading-loading-forever.gif)",
+                    unsafe_allow_html=True)
+        st.markdown('### Work in progress......')
+
 # Contact
 if selected == 'Contact':
     st.markdown("# Just click and let's chat!")
