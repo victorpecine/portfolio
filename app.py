@@ -60,43 +60,28 @@ if selected == 'About':
     st.write('---')
     # About
     with st.container():
-        col1, col2 = st.columns(spec=2,
-                                gap='small',
-                                vertical_alignment='top'
-                                )
-        with col1:
-            st.markdown("""
-                        +2 years' experience as a Data Scientist developing :green[***clustering, \
-                            classification and regression***] machine learning models to contribute to \
-                                the modernization of Brazilian industries. I also carried out statistical \
-                                    studies and optimization on the models, proposing improvements to \
-                                        increase efficiency with programming in :green[***SQL***] and \
-                                            :green[***Python***].
-                                        
-                        In addition, I have interacted with clients to understand their needs and ensure \
-                            the delivery of value to help teams and leaders make decisions. To do this, \
-                                I seek a business vision to understand the need and align solutions with \
-                                    organizational strategies.
+        st.markdown("""
+                    +2 years' experience as a Data Scientist developing :green[***clustering, \
+                        classification and regression***] machine learning models to contribute to \
+                            the modernization of Brazilian industries. I also carried out statistical \
+                                studies and optimization on the models, proposing improvements to \
+                                    increase efficiency with programming in :green[***SQL***] and \
+                                        :green[***Python***].
+                                    
+                    In addition, I have interacted with clients to understand their needs and ensure \
+                        the delivery of value to help teams and leaders make decisions. To do this, \
+                            I seek a business vision to understand the need and align solutions with \
+                                organizational strategies.
 
-                        My daily work and study routine involve using libraries such as \
-                            :green[***Pandas, Numpy, Scikit-learn, SciPy, Matplotlib, and Plotly***].
+                    My daily work and study routine involve using libraries such as \
+                        :green[***Pandas, Numpy, Scikit-learn, SciPy, Matplotlib, and Plotly***].
 
-                        I have developed models using models such as :green[***Decision Trees, Random Forest, \
-                            XGBoost, CatBoost, LightGBM, and AdaBoost***].
+                    I have developed models using models such as :green[***Decision Trees, Random Forest, \
+                        XGBoost, CatBoost, LightGBM, and AdaBoost***].
 
-                        Furthermore, the modeling process includes the use of hyperparameters, analysis of \
-                            overfitting and underfitting, cross-validation, and metrics evaluation.
-                        """)
-        with col2:
-            url_img_computer_about = 'https://lottie.host/29bc0eee-b34a-43ac-b6b1-1b862e565d30/To7aVTzMzF.json'
-            img_computer_about = load_lottie_url(url_img_computer_about)
-            st_lottie(img_computer_about,
-                    speed=5,
-                    height=500,
-                    width=500,
-                    loop=True,
-                    quality='high'
-                    )
+                    Furthermore, the modeling process includes the use of hyperparameters, analysis of \
+                        overfitting and underfitting, cross-validation, and metrics evaluation.
+                    """)
     st.write('---')
 
     # Education
