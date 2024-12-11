@@ -63,15 +63,17 @@ if selected == 'About':
         st.markdown("""
                     +2 years' experience as a Data Scientist developing :green[***clustering, \
                         classification and regression***] machine learning models to contribute to \
-                            the modernization of Brazilian industries. I also carried out statistical \
-                                studies and optimization on the models, proposing improvements to \
-                                    increase efficiency with programming in :green[***SQL***] and \
-                                        :green[***Python***].
+                            the modernization of Brazilian industries.
+                    
+                    I also carried out statistical studies and optimization on the models, proposing \
+                        improvements to increase efficiency with programming in :green[***SQL***] and \
+                            :green[***Python***].
                                     
                     In addition, I have interacted with clients to understand their needs and ensure \
-                        the delivery of value to help teams and leaders make decisions. To do this, \
-                            I seek a business vision to understand the need and align solutions with \
-                                organizational strategies.
+                        the delivery of value to help teams and leaders make decisions.
+                    
+                    To do this, I seek a business vision to understand the need and align solutions with \
+                        organizational strategies.
 
                     My daily work and study routine involve using libraries such as \
                         :green[***Pandas, Numpy, Scikit-learn, SciPy, Matplotlib, and Plotly***].
@@ -96,26 +98,29 @@ if selected == 'About':
     with st.container():
         st.markdown('## Past experiences')
         st.markdown('### +2 years as Data Scientist')
+        st.markdown('######')
 
-        st.markdown('#### Data Scientist at Ubiratã')
-        st.markdown('- From Jan. 2024 to Aug. 2024')
+        st.markdown('### Data Scientist at Ubiratã')
+        st.markdown('#### From Jan. 2024 to Aug. 2024 - 7 months')
         st.markdown('- I took part in a project where we developed a supervised machine learning model \
-                        using non-negative least squares regression. The aim was to estimate the percentage \
-                            of chemical elements in the scrap used in steel production. :blue[With the \
-                                implementation of the model, the client obtained monthly savings \
-                                    of thousands of dollars].')
+                        using non-negative least squares regression.')
+        st.markdown('- The aim was to estimate the percentage of chemical elements in the scrap used in steel production.')
+        st.markdown('- :blue[With the implementation of the model, the client obtained monthly savings \
+                        of thousands of dollars.]')
         st.markdown('- My responsibilities included statistical analysis, drawing up graphs for \
                         presentations to clients, searching for and manipulating data in :green[PostgreSQL], \
                             using the :green[Scipy, Scikit-learn, Numpy, Pandas, Matplotlib and Plotly] \
                                 libraries and taking part in meetings in English with clients.')
         st.markdown('######')
-        st.markdown('#### Data Scientist at PredData')
-        st.markdown('- From Oct. 2022 to Jan. 2024')
-        st.markdown("- I was responsible for starting the company's data science department. I developed \
-                        :green[unsupervised machine learning] algorithms for :green[clustering] and \
-                            :green[supervised algorithms] for :green[classification] to identify compressed \
-                                air leaks. With this, :blue[we identified leaks over 60% for a \
-                                    multinational vehicle manufacturer].")
+
+        st.markdown('### Data Scientist at PredData')
+        st.markdown('#### From Oct. 2022 to Jan. 2024 - 15 months')
+        st.markdown("- I was responsible for starting the company's data science department.")
+        st.markdown("- I developed :green[unsupervised machine learning] algorithms for :green[clustering] and \
+                        :green[supervised algorithms] for :green[classification] to identify compressed \
+                            air leaks.")
+        st.markdown('- :blue[We identified leaks over 60% for a multinational vehicle manufacturer.]')
+
         st.markdown('- I also created dashboards for clients to view compressed air consumption and analyze \
                         estimated losses in real time.')
     st.markdown('---')
